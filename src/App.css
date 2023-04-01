@@ -1,0 +1,109 @@
+.drawer {
+  font-family: 'Open Sans', sans-serif;
+  position: fixed;
+  top: calc(100% - 94px);
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 90%;
+  z-index: 4;
+  pointer-events: initial;
+}
+
+.drawerInner {
+  height: 100%;
+}
+
+.drawerOverlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  z-index: 3;
+  backdrop-filter: blur(0.7rem);
+  pointer-events: initial;
+  transition: all 0.3s ease-in-out;
+}
+
+.drawerWrapper {
+  z-index: 1;
+  bottom: 0px;
+  left: 0px;
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+  border-bottom: 0;
+  pointer-events: initial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drawer-content {
+  background-color: azure;
+  height: 100%;
+  overflow: scroll;
+  padding-bottom: 80px;
+  margin: 0 auto;
+}
+
+.drawerHeaderWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 6px 6px 0px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.drawerHandleBar {
+  width: 40px;
+  height: 4px;
+  background-color: black;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+}
+
+.card-container:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+  flex-grow: 1;
+  background-color: lightskyblue;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+}
