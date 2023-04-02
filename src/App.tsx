@@ -4,7 +4,7 @@ import { DrawerHeader } from './DrawerHeader';
 import "./App.css"
 import Card from './Card';
 
-function App() {
+function Drawer() {
 
   const [open, setOpen] = useState(false);
 
@@ -85,4 +85,4 @@ function App() {
   );
 }
 
-export default App
+export default Drawer
